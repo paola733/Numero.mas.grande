@@ -1,22 +1,20 @@
-let num1 = 1;
-let num2 = 2;
-let num3 = 3;
-
-console.log(cualEsMayor(num1, num2, num3));
-
-function cualEsMayor(num1, num2, num3) {
-  let mayor = 0;
-  if (num1 > num2 && num1 > num3) {
-    mayor = num1;
-  } else if (num2 > num3) {
-    mayor = num2;
-  } else {
-    mayor = num3;
-  }
-  return mayor;
+let peso=29;
+function calcFlujo(peso){
+    let resto = peso;
+    let flujo = 0;
+    if (resto>20){
+        let aux = resto-20;
+        flujo += aux*1;
+        resto -= aux;
+        console.log(resto);
+    } 
+    if (resto>10){
+        let aux = resto-10;
+        flujo += aux*2;
+        resto -= aux;
+      console.log(resto);
+    }
+    flujo += resto*4;
+    return flujo;
+    console.log(flujo)
 }
-
-
-
-
-
