@@ -14,8 +14,8 @@ if(num1 >num2) {
         return num3
     }
 }
-else if(num2>num3){
-    return numer2
+else if(num1>num3){
+    return numer1
 }
 else{
     return numer3
